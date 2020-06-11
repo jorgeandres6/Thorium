@@ -42,13 +42,13 @@ function App() {
                 <Link to="/servicios" className="indigo-text text-darken-2">Servicios</Link>
               </li>
               <li>
-                <Link to="/contacto" className="indigo-text text-darken-2">Contacto</Link>
+                <a href="https://forms.gle/gEyKeQjQbs9wqsXTA" className="indigo-text text-darken-2" target="_blank" rel="noopener noreferrer">Contacto</a>
               </li>
             </ul>
           </div>
         </nav>
         <ul className="sidenav" id="mobile-demo">
-        <li>
+              <li>
                 <Link exact to="/"  className="indigo-text text-darken-2">Inicio</Link>
               </li>
               <li>
@@ -61,7 +61,7 @@ function App() {
                 <Link to="/servicios" className="indigo-text text-darken-2">Servicios</Link>
               </li>
               <li>
-                <Link to="/contacto" className="indigo-text text-darken-2">Contacto</Link>
+                <a href="https://forms.gle/gEyKeQjQbs9wqsXTA" className="indigo-text text-darken-2" target="_blank" rel="noopener noreferrer">Contacto</a>
               </li>
         </ul>
 
@@ -73,30 +73,47 @@ function App() {
           <Route path="/trabaja" component={Trabaja} />
         </Switch>
       </div>
-      <footer className="page-footer">
+      <footer className="page-footer blue-grey lighten-5">
         <div className="container">
           <div className="row">
             <div className="col l6 s12">
-              <h5 className="white-text">Footer Content</h5>
-              <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              <h5 className="indigo-text text-darken-4">Thorium</h5>
+              <p className="indigo-text text-darken-4">Consultoría de talento humano</p>
+              <p className="indigo-text text-darken-2">Contactanos a: info@thoriumec.com</p>
             </div>
             <div className="col l4 offset-l2 s12">
-              <h5 className="white-text">Links</h5>
+              <h5 className="indigo-text text-darken-4">Mapa del sitio</h5>
               <ul>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              <li>
+                <Link exact to="/"  className="indigo-text text-darken-2">Inicio</Link>
+              </li>
+              <li>
+                <Link to="/nosotros" className="indigo-text text-darken-2">Nosotros</Link>
+              </li>
+              <li>
+                <Link to="/trabaja" className="indigo-text text-darken-2">Trabaja con nosotros</Link>
+              </li>
+              <li>
+                <Link to="/servicios" className="indigo-text text-darken-2">Servicios</Link>
+              </li>
+              <li>
+                <a href="https://forms.gle/gEyKeQjQbs9wqsXTA" className="indigo-text text-darken-2" target="_blank" rel="noopener noreferrer">Contacto</a>
+              </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="footer-copyright">
+        <div className="footer-copyright indigo-text text-darken-4">
           <div className="container">
-          © 2020 Copyright Text
-          <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+          © 2020 Copyright
+          <a className="indigo-text text-darken-4 right" href="#!">Powered by Inventoree</a>
           </div>
         </div>
+        <div className="fixed-action-btn">
+        <a href="https://api.whatsapp.com/send?phone=593999095974&text=Hola!%20Quiero%20recibir%20mas%20informacion" target="_blank" rel="noopener noreferrer" className="btn-floating btn-large green">
+          <img src={require("./img/WhatsLogo.png")} width="100%" alt="Whatsapp"/>
+        </a>
+      </div>
      </footer>
     </Router>
     
