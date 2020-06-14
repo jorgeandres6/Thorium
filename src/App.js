@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Logo from './img/logo.svg';
 import './App.css';
 import 'materialize-css/dist/css/materialize.min.css';
@@ -13,14 +13,21 @@ import Nosotros from './Componentes/Nosotros'
 import Servicios from './Componentes/Servicios'
 import Contacto from './Componentes/Contacto'
 import Trabaja from './Componentes/Trabaja'
-
-
-
+import M from "materialize-css"
 
 function App() {
 
+useEffect(() => {
+
+  var elems = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(elems,{
+    draggable:true
+  });
+
+},[])
+
   return (
-    <Router basename="/build.com">
+    <Router>
       <div>
         <nav className="blue-grey lighten-5 indigo-text text-darken-4">
           <div className="nav-wrapper">
@@ -30,7 +37,7 @@ function App() {
           <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
             <ul className="right hide-on-med-and-down">
               <li>
-                <Link exact to="/"  className="indigo-text text-darken-2">Home</Link>
+                <Link exact to="/"  className="indigo-text text-darken-2 sidenav-close">Home</Link>
               </li>
               <li>
                 <Link to="/nosotros" className="indigo-text text-darken-2">Nosotros</Link>
@@ -49,16 +56,16 @@ function App() {
         </nav>
         <ul className="sidenav" id="mobile-demo">
               <li>
-                <Link exact to="/"  className="indigo-text text-darken-2">Inicio</Link>
+                <Link exact to="/"  className="indigo-text text-darken-2 sidenav-close">Inicio</Link>
               </li>
               <li>
-                <Link to="/nosotros" className="indigo-text text-darken-2">Nosotros</Link>
+                <Link to="/nosotros" className="indigo-text text-darken-2 sidenav-close">Nosotros</Link>
               </li>
               <li>
-                <Link to="/trabaja" className="indigo-text text-darken-2">Trabaja con nosotros</Link>
+                <Link to="/trabaja" className="indigo-text text-darken-2 sidenav-close">Trabaja con nosotros</Link>
               </li>
               <li>
-                <Link to="/servicios" className="indigo-text text-darken-2">Servicios</Link>
+                <Link to="/servicios" className="indigo-text text-darken-2 sidenav-close">Servicios</Link>
               </li>
               <li>
                 <a href="https://forms.gle/gEyKeQjQbs9wqsXTA" className="indigo-text text-darken-2" target="_blank" rel="noopener noreferrer">Contacto</a>
