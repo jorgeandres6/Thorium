@@ -5,9 +5,9 @@ export default function Info (){
         <div>
             <div className="container">
                 <div className="row">
-                    <div className="card hoverable" style={{marginTop:"2em"}}>
+                    <div className="card hoverable blue-grey darken-4 grey-text text-lighten-2" style={{marginTop:"2em"}}>
                         <div className="card-content center-align">
-                            <p className="card-title activator grey-text text-darken-4"><h1>Empresa</h1></p>
+                            <p className="card-title activator grey-text text-lighten-2"><h1>Empresa</h1></p>
                             <p>Click en la imagen para mas información</p>
                         </div>
                         <div className="card-image waves-effect waves-block waves-light">
@@ -33,9 +33,9 @@ export default function Info (){
                     </div>
                 </div>
 
-                <div className="card hoverable" style={{marginTop:"2em"}}>
+                <div className="card hoverable blue-grey darken-4 grey-text text-lighten-2" style={{marginTop:"2em"}}>
                         <div className="card-content center-align">
-                            <p className="card-title activator grey-text text-darken-4"><h1>Persona</h1></p>
+                            <p className="card-title activator grey-text text-lighten-2"><h1>Persona</h1></p>
                             <p>Click en la imagen para mas información</p>
                         </div>
                         <div className="card-image waves-effect waves-block waves-light">
